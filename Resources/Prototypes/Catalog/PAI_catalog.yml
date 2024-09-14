@@ -1,0 +1,11 @@
+- type: listing
+  id: PAIOpenMap
+  name: PAIOpenMap #Not yet
+  description: #Not yet
+  productAction: ActionPAIOpenMap
+  categories:
+  - PAIPrograms
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+

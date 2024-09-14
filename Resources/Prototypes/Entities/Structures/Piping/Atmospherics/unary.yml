@@ -68,6 +68,12 @@
       sound:
         path: /Audio/Ambience/Objects/gas_vent.ogg
     - type: Weldable
+    - type: Crawl
+      containerId: storage
+    - type: Cryostorage
+    - type: ContainerContainer
+      containers:
+        storage: !type:ContainerSlot
 
 - type: entity
   parent: GasUnaryBase

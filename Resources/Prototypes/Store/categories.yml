@@ -98,3 +98,7 @@
   id: DiscountedItems
   name: store-discounted-items
   priority: 200
+#PAI
+- type: storeCategory
+  id: PAIPrograms
+  name: store-category-programs

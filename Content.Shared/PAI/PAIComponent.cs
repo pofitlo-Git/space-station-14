@@ -36,6 +36,19 @@ public sealed partial class PAIComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? MapAction;
 
+    [DataField]
+    public EntProtoId ShopActionId = "ActionPAIShop";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? ShopAction;
+
+    [DataField]
+    public EntProtoId DirectivesActionId = "ActionPAIOpenDirectives";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? DirectivesAction;
+
+
     /// <summary>
     /// When microwaved there is this chance to brick the pai, kicking out its player and preventing it from being used again.
     /// </summary>

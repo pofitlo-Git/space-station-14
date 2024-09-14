@@ -1,0 +1,53 @@
+- type: entity
+  id: ActionPAIShop
+  name: Program shop
+  description: Open your program shop to buy new systems.
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    icon:
+      sprite: Interface/Actions/actions_pai.rsi
+      state: pai-shop
+    event: !type:PAIShopActionEvent
+
+- type: entity
+  id: ActionPAIPlayMidi
+  name: Play MIDI
+  description: Open your portable MIDI interface to soothe your owner.
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    checkConsciousness: false
+    icon:
+      sprite: Interface/Actions/actions_pai.rsi
+      state: pai-midi
+    event: !type:OpenUiActionEvent
+      key: enum.InstrumentUiKey.Key
+
+- type: entity
+  id: ActionPAIOpenMap
+  name: Open Map
+  description: Open your map interface and guide your owner.
+  components:
+    - type: InstantAction
+      checkCanInteract: false
+      checkConsciousness: false
+      icon:
+        sprite: Interface/Actions/actions_pai.rsi
+        state: pai-map
+      event: !type:OpenUiActionEvent
+        key: enum.StationMapUiKey.Key
+
+- type: entity
+  id: ActionPAIOpenDirectives
+  name: Open directives
+  description: Open your directives menu
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    checkConsciousness: false
+    icon:
+      sprite: Interface/Actions/actions_pai.rsi
+      state: pai-midi
+    event: !type:OpenUiActionEvent
+      key: enum.InstrumentUiKey.Key
